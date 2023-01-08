@@ -1,10 +1,6 @@
 ## Visão Geral de Algoritmos e Estrutura de Dados
 
-```txt
-💡
-Algoritmo = verbo, ação, é o processar das coisas;
-Estrutura de Dados = forma de organizar os dados.
-```
+> 💡 <br/> Algoritmo = verbo, ação, é o processar das coisas;<br/> Estrutura de Dados = forma de organizar os dados.
 
 ### Algoritmo
 
@@ -52,9 +48,7 @@ Exemplos:
 
 Estruturas de dados básicas são os blocos de construção: números inteiros e reais, letras e sequência de letras, valores booleanos,.
 
-```txt
-💡 Tem linguagens de tipagem dinâmica que vão trabalhar os dados de forma flexível (um dado apontado para diferentes tipos), mas tem linguagens que são mais rigorosas (se um dado for inteiro, a natureza desse tipo não pode ser mudada).
-```
+> 💡 Tem linguagens de tipagem dinâmica que vão trabalhar os dados de forma flexível (um dado apontado para diferentes tipos), mas tem linguagens que são mais rigorosas (se um dado for inteiro, a natureza desse tipo não pode ser mudada).
 
 **Você armazena os dados em variáveis e constantes para que você consiga rotular um determinado valor**, que vai estar armazenado na memória do computador, e em cima desses valores rotulados você vai poder fazer operações.
 
@@ -76,9 +70,7 @@ Analogia - como um livro é organizado: Um livro é organizado utilizando letras
 
 Essas frases podem ser terminadas com pontos e com vírgulas, por exemplo. Então, na analogia, as frases formam os parágrafos. Trazendo para o mundo da programação, a sentença de código seria a frase e o bloco de código o parágrafo. Sendo assim:
 
-```txt
-💡 Um parágrafo é, então, um agrupamento de frases. Da mesma forma que um bloco de código é um agrupamento de sentenças de código.
-```
+> 💡 Um parágrafo é, então, um agrupamento de frases. Da mesma forma que um bloco de código é um agrupamento de sentenças de código.
 
 Exemplo: tenho 3 sentenças de código no código abaixo:
 
@@ -90,9 +82,7 @@ console.log("Boa noite!");
 
 E assim como uma frase em linguagem natural pode ocupar várias linhas, uma sentença de código pode também ocupar várias linhas.
 
-```txt
-⚠️ Uma sentença de código, como JavaScript, pode ou não terminar com ';'. Já o Java, por exemplo, é obrigatório terminar uma sentença de código com ';'.
-```
+> ⚠️ Uma sentença de código, como JavaScript, pode ou não terminar com ';'. Já o Java, por exemplo, é obrigatório terminar uma sentença de código com ';'.
 
 Assim como algoritmo é uma sentença de passos, você vai definir uma sequência de sentenças de código para que o computador execute.
 
