@@ -1,12 +1,12 @@
-# Visão Geral de Algoritmos e Estrutura de Dados
+## Visão Geral de Algoritmos e Estrutura de Dados
 
-```md
+```txt
 💡
 Algoritmo = verbo, ação, é o processar das coisas;
 Estrutura de Dados = forma de organizar os dados.
 ```
 
-## Algoritmo
+### Algoritmo
 
 É uma sequência de passos que fazem um determinado processamento para sair de um local para outro.
 
@@ -32,13 +32,13 @@ Algoritmos podem ser representados por fluxogramas, linguagem natural (portuguê
 5 escreva("Digite dois números: ")
 ```
 
-### Algoritmo vs Liguagem de Programação
+#### Algoritmo vs Liguagem de Programação
 
 Algoritmo é baixo nível e mais próximo do computador e do mundo do binário. Linguagem é alto nível e mais próximo do programador.
 
 Então não é o resultado que diz o algoritmo, é aquilo que você quer atingir e também a escolha da linguagem.
 
-## Estrutura de Dados
+### Estrutura de Dados
 
 Uma vez que dado é uma coisa e estrutura de dados é outra, **a estrutura de dados visa organizar e administrar os dados**, trazer ordem e estrutura dos dados.
 
@@ -52,7 +52,7 @@ Exemplos:
 
 Estruturas de dados básicas são os blocos de construção: números inteiros e reais, letras e sequência de letras, valores booleanos,.
 
-```
+```txt
 💡 Tem linguagens de tipagem dinâmica que vão trabalhar os dados de forma flexível (um dado apontado para diferentes tipos), mas tem linguagens que são mais rigorosas (se um dado for inteiro, a natureza desse tipo não pode ser mudada).
 ```
 
@@ -67,3 +67,31 @@ Essas operações são chamadas de operações de atribuição, aritméticas, l�
 - Os dados serão atribuídos a uma determinada variável/constante e utilizados para fazer operações.
 
 Lembrando que também é possível criar estruturas personalizadas, por exemplo, mapeamento de um cliente e um produto.
+
+## Conceitos
+
+### Sentença de código vs Bloco de código
+
+Analogia - como um livro é organizado: Um livro é organizado utilizando letras, que vão formar as palavras, que vão formar as frases, que vão formar os parágrafos, que vão formar as seções, que vão formar os capítulos, que vão formar o livro.
+
+Essas frases podem ser terminadas com pontos e com vírgulas, por exemplo. Então, na analogia, as frases formam os parágrafos. Trazendo para o mundo da programação, a sentença de código seria a frase e o bloco de código o parágrafo. Sendo assim:
+
+```txt
+💡 Um parágrafo é, então, um agrupamento de frases. Da mesma forma que um bloco de código é um agrupamento de sentenças de código.
+```
+
+Exemplo: tenho 3 sentenças de código no código abaixo:
+
+```JS
+console.log("Bom dia!");
+console.log("Boa tarde!");
+console.log("Boa noite!");
+```
+
+E assim como uma frase em linguagem natural pode ocupar várias linhas, uma sentença de código pode também ocupar várias linhas.
+
+```txt
+⚠️ Uma sentença de código, como JavaScript, pode ou não terminar com ';'. Já o Java, por exemplo, é obrigatório terminar uma sentença de código com ';'.
+```
+
+Assim como algoritmo é uma sentença de passos, você vai definir uma sequência de sentenças de código para que o computador execute.
