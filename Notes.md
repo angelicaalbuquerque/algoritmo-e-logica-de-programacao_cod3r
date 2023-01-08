@@ -95,3 +95,51 @@ E assim como uma frase em linguagem natural pode ocupar várias linhas, uma sent
 ```
 
 Assim como algoritmo é uma sentença de passos, você vai definir uma sequência de sentenças de código para que o computador execute.
+
+Um bloco de código em JavaScript é definido a partir de um par de chaves ({ }) e dentro desse par você pode definir as sentenças de código, ou seja, elas estarão agrupadas dentro de um bloco de código. A ideia de um bloco de código é agrupar várias sentenças dentro de um bloco.
+
+Exemplo: três sentenças dentro de um bloco de código.
+
+```JS
+{
+  console.log("Bom dia!");
+  console.log("Boa tarde!");
+  console.log("Boa noite!");
+}
+```
+
+Abaixo, temos um código que tem 5 sentenças e 2 blocos de código:
+
+```JS
+{
+  console.log("Passo 1");
+  console.log("Passo 2");
+  console.log("Passo 3");
+}
+
+{
+  console.log("Passo 4");
+  console.log("Passo 5");
+}
+```
+
+No momento que tenho um bloco de chaves, você pode também criar um bloco de código dentro do outro, que obrigatoriamente tem que abrir e fechar dentro do bloco externo.
+
+```JS
+{
+  console.log("sentença no bloco 1");
+
+  { console.log("sentença no bloco 2!");
+    { console.log("sentença no Bloco 3, que está dentro do bloco 2") }
+  }
+
+  console.log("sentença no bloco 1");
+}
+```
+
+Assim, temos a visão completa de como um código é organizado:
+
+- Um código é organizado em pastas;
+- Essas pastas contém arquivos;
+- Esses arquivos contém sentenças de código;
+- Essas sentenças de código estão agrupadas em blocos de código.
