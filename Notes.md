@@ -133,3 +133,20 @@ Assim, temos a visão completa de como um código é organizado:
 - Essas pastas contém arquivos;
 - Esses arquivos contém sentenças de código;
 - Essas sentenças de código estão agrupadas em blocos de código.
+
+## Trabalhando com dados
+
+Para armazenar uma informação, podemos utilizar variáveis e constantes. Uma vez que esse determinado espaço de memória é armazenado, podemos referenciar esse espaço pelo nome que foi dado.
+
+```JS
+var quantidade = 10;
+var preco = 6.4;
+var imposto = 1.5;
+var precoFinal = preco + imposto;
+
+console.log(quantidade);
+//retorno: 10
+
+console.log(precoFinal * quantidade);
+//retorno 79
+```
