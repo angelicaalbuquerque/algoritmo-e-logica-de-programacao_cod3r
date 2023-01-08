@@ -1,7 +1,10 @@
 # Visão Geral de Algoritmos e Estrutura de Dados
 
-Algoritmo = verbo, ação, é o processar das coisas; <br/>
+```md
+💡
+Algoritmo = verbo, ação, é o processar das coisas;
 Estrutura de Dados = forma de organizar os dados.
+```
 
 ## Algoritmo
 
@@ -36,3 +39,31 @@ Algoritmo é baixo nível e mais próximo do computador e do mundo do binário. 
 Então não é o resultado que diz o algoritmo, é aquilo que você quer atingir e também a escolha da linguagem.
 
 ## Estrutura de Dados
+
+Uma vez que dado é uma coisa e estrutura de dados é outra, **a estrutura de dados visa organizar e administrar os dados**, trazer ordem e estrutura dos dados.
+
+Exemplos:
+
+- _Saiu a lista de aprovados no concurso_. A lista tem os dados. A estrutura dos dados vai garantir que essa ordem seja correta;
+- _A fila no banco está imensa_. A fila tem uma sequência, o primeiro que chega é o primeiro que vai sair da fila (FIFO - First In, First Out);
+- _Tenho uma pilha de livros para ler_. O livro posto por último será o primeiro a ser lido. A estrutura é LIFO - Last In, First Out;
+- _Sistema de arquivos do computador_. O sistema de arquivos é uma estrutura de dados que organiza os dados em pastas e subpastas, sendo essa a estrutura de árvore;
+- _Tabelas_. Organizando os dados em colunas e linhas.
+
+Estruturas de dados básicas são os blocos de construção: números inteiros e reais, letras e sequência de letras, valores booleanos,.
+
+```
+💡 Tem linguagens de tipagem dinâmica que vão trabalhar os dados de forma flexível (um dado apontado para diferentes tipos), mas tem linguagens que são mais rigorosas (se um dado for inteiro, a natureza desse tipo não pode ser mudada).
+```
+
+**Você armazena os dados em variáveis e constantes para que você consiga rotular um determinado valor**, que vai estar armazenado na memória do computador, e em cima desses valores rotulados você vai poder fazer operações.
+
+Essas operações são chamadas de operações de atribuição, aritméticas, lógicas e relacionais.
+
+📌 Resumo:
+
+- Os dados são armazenados em variáveis e constantes;
+- Os dados são regidos pelas estruturas de dados, que vão dar ordem/administrar os dados e dizer como eles vão se comportar para estarem aderentes àquela estrutura;
+- Os dados serão atribuídos a uma determinada variável/constante e utilizados para fazer operações.
+
+Lembrando que também é possível criar estruturas personalizadas, por exemplo, mapeamento de um cliente e um produto.
