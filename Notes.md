@@ -140,8 +140,6 @@ Para armazenar uma informação, podemos utilizar variáveis e constantes. Uma v
 
 A primeira parte da variável é a palavra reservada (var, let ou const) e a segunda o identificador (nome dessa variável). Com o sinal de "=" você atribui um valor a essa variável.
 
-````JS
-
 ```JS
 var quantidade = 10;
 var preco = 6.4;
@@ -153,4 +151,20 @@ console.log(quantidade);
 
 console.log(precoFinal * quantidade);
 //retorno 79
-````
+```
+
+### Tipos de dados
+
+Os três tipos mais básicos de dados suportados por JavaScript são números, booleanos e strings (sequência de caracteres). Podemos descobrir o tipo de um dado ou de uma variável utilizando o _typeof_. O _typeof_ é uma palavra reservada do JavaScript.
+
+```JS
+let idade = 31;
+console.log(typeof idade); //number
+console.log(typeof 31);  //number
+
+let estaChovendo = true; // ou false
+console.log(typeof estaChovendo); //boolean
+
+let frase = "Eu gosto de chuva";
+console.log(typeof frase); //string
+```
