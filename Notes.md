@@ -168,3 +168,23 @@ console.log(typeof estaChovendo); //boolean
 let frase = "Eu gosto de chuva";
 console.log(typeof frase); //string
 ```
+
+Os valores de uma variável, se forem _var_ ou _let_, podem ser mutáveis, basta atribuir um novo valor a ela.
+
+```JS
+let a = 3;
+console.log(a); //3
+a = 10;
+console.log(a); //10
+
+const b = 18;
+console.log(b);
+b = 20;
+console.log(b); //TypeError: Assignment to constant variable
+```
+
+Se você tem um valor dentro do seu programa que você suspeita que ele não precisará ser alterado, a sugestão é priorizar as constantes e criar mais constantes do que variáveis.
+
+Se você realmente precisar alterar, você transforma para a variável. Mas se você acha que tem a possibilidade de não precisar alterar o valor, inicialize-o logo com a constante que somente quando realmente tiver um cenário que seja justificado para alterar aquela variável aí sim você faz essa alteração.
+
+> 💡 É melhor para a saúde do programa você ter mais constantes do que variáveis.
