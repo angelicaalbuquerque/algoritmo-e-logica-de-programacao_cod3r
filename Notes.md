@@ -138,6 +138,10 @@ Assim, temos a visão completa de como um código é organizado:
 
 Para armazenar uma informação, podemos utilizar variáveis e constantes. Uma vez que esse determinado espaço de memória é armazenado, podemos referenciar esse espaço pelo nome que foi dado.
 
+A primeira parte da variável é a palavra reservada (var, let ou const) e a segunda o identificador (nome dessa variável). Com o sinal de "=" você atribui um valor a essa variável.
+
+````JS
+
 ```JS
 var quantidade = 10;
 var preco = 6.4;
@@ -149,4 +153,4 @@ console.log(quantidade);
 
 console.log(precoFinal * quantidade);
 //retorno 79
-```
+````
