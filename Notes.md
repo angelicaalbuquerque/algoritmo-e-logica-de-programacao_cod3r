@@ -233,3 +233,15 @@ Operadores relacionais são utilizados para comparar valores, o resultado de uma
 <pre>3 === "3" = false</pre>
 
 No primeiro, comparamos os valores. No segundo, comparamos o tipo e o valor (e apesar do valor ser igual a 3, o tipo é diferente: um é number outro é string).
+
+### Tipagem Fraca, Forte, Dinâmica e Estática
+
+A tipagem fraca é quando você não precisa especificar o tipo de dado que você está trabalhando. Já a tipagem forte é quando você precisa especificar o tipo de dado que você está trabalhando.
+
+Na tipagem dinâmica, os tipos não são declarados no código e, portanto, conhecidos/checados em tempo de execução.
+
+Na tipagem estática, os tipos das variáveis de um programa são explicitamente definidos no código e, portanto, conhecidos/checados em tempo de compilação.
+
+Importante não confundir: tipagem dinâmica NÃO significa tipagem fraca! Ruby possui tipagem dinâmica e forte, enquanto JavaScript possui tipagem dinâmica e fraca (essa última porque não obriga a criação de uma variável com um tipo específico, deixa isso livre).
+
+> 💡 [Confira este artigo sobre tipagem fraca, forte, dinâmica e estática](https://dev.to/joaoava/tipagem-fraca-forte-dinamica-e-estatica-g8k).
