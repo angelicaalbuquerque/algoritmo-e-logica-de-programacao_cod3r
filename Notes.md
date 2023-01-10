@@ -196,3 +196,14 @@ Se você realmente precisar alterar, você transforma para a variável. Mas se v
 - Binários: _Exemplo: 3 + 4_. Um operador opera em cima de dois operandos.
 - Unários: _Exemplo: a++_. Operador opera em cima de um único operando.
 - Ternários: _Exemplo: X ? a : b_ O operador "?" opera em cima de três partes (_X_, _a_ e _b_).
+
+### Tipos de Operadores
+
+Os operadores são divididos em 6 grupos:
+
+1. Aritméticos
+2. Relacionais
+3. Atribuição
+4. Lógicos
+5. Unários
+6. Ternários
