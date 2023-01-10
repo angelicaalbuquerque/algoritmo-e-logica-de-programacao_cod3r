@@ -207,3 +207,18 @@ Os operadores são divididos em 6 grupos:
 4. Lógicos
 5. Unários
 6. Ternários
+
+#### Aritméticos
+
+<pre>+ - * / %</pre>
+
+Adição, subtração, multiplicação, divisão e módulo (resto da divisão).
+
+Quanto ao módulo:
+
+<pre>10 / 3 = 3</pre>
+<pre>10 % 3 = 1</pre>
+<pre>33248512 % 2 = 0</pre>
+<pre>13 % 2 = 1</pre>
+
+Qualquer módulo 2 com número par a resposta vai ser 0 porque qualquer número par é divisível por dois, não tem resto. E qualquer número ímpar dividido por 2 vai ter resto 1.
