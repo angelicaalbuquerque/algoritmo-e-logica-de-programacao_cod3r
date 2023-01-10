@@ -62,7 +62,7 @@ Essas operações são chamadas de operações de atribuição, aritméticas, l�
 
 Lembrando que também é possível criar estruturas personalizadas, por exemplo, mapeamento de um cliente e um produto.
 
-## Conceitos
+## Conceitos iniciais
 
 ### Sentença de código vs Bloco de código
 
@@ -134,7 +134,7 @@ Assim, temos a visão completa de como um código é organizado:
 - Esses arquivos contém sentenças de código;
 - Essas sentenças de código estão agrupadas em blocos de código.
 
-## Trabalhando com dados
+### Trabalhando com dados
 
 Para armazenar uma informação, podemos utilizar variáveis e constantes. Uma vez que esse determinado espaço de memória é armazenado, podemos referenciar esse espaço pelo nome que foi dado.
 
@@ -188,3 +188,11 @@ Se você tem um valor dentro do seu programa que você suspeita que ele não pre
 Se você realmente precisar alterar, você transforma para a variável. Mas se você acha que tem a possibilidade de não precisar alterar o valor, inicialize-o logo com a constante que somente quando realmente tiver um cenário que seja justificado para alterar aquela variável aí sim você faz essa alteração.
 
 > 💡 É melhor para a saúde do programa você ter mais constantes do que variáveis.
+
+## Operadores
+
+### Classificação dos Operadores
+
+- Binários: _Exemplo: 3 + 4_. Um operador opera em cima de dois operandos.
+- Unários: _Exemplo: a++_. Operador opera em cima de um único operando.
+- Ternários: _Exemplo: X ? a : b_ O operador "?" opera em cima de três partes (_X_, _a_ e _b_).
