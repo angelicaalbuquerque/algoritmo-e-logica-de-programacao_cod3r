@@ -222,3 +222,14 @@ Quanto ao módulo:
 <pre>13 % 2 = 1</pre>
 
 Qualquer módulo 2 com número par a resposta vai ser 0 porque qualquer número par é divisível por dois, não tem resto. E qualquer número ímpar dividido por 2 vai ter resto 1.
+
+#### Relacionais
+
+<pre> > >= < <= == === != !==</pre>
+
+Operadores relacionais são utilizados para comparar valores, o resultado de uma expressão relacional é um valor booleano
+
+<pre>3 == 3 = true</pre>
+<pre>3 === "3" = false</pre>
+
+No primeiro, comparamos os valores. No segundo, comparamos o tipo e o valor (e apesar do valor ser igual a 3, o tipo é diferente: um é number outro é string).
