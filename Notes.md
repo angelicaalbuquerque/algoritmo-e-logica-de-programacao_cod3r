@@ -234,6 +234,14 @@ Operadores relacionais são utilizados para comparar valores, o resultado de uma
 
 No primeiro, comparamos os valores. No segundo, comparamos o tipo e o valor (e apesar do valor ser igual a 3, o tipo é diferente: um é number outro é string).
 
+#### Atribuição
+
+<pre>let a = 3 + 2;</pre>
+
+O resultado da expressão será atribuído à variavel _a_.
+
+Importante lembrar que nem sempre do lado esquerdo teremos uma variável. Mas 98% dos casos serão assim, onde uma expressão estará ao lado direito e uma variável ao lado esquerdo.
+
 ### Tipagem Fraca, Forte, Dinâmica e Estática
 
 A tipagem fraca é quando você não precisa especificar o tipo de dado que você está trabalhando. Já a tipagem forte é quando você precisa especificar o tipo de dado que você está trabalhando.
