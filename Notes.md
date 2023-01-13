@@ -242,7 +242,7 @@ O resultado da expressão será atribuído à variavel _a_.
 
 Importante lembrar que nem sempre do lado esquerdo teremos uma variável. Mas 98% dos casos serão assim, onde uma expressão estará ao lado direito e uma variável ao lado esquerdo.
 
-Interessante mostrar que é possível fazer a junção do operador de atribuição com o aritmético nos casos abaixo:
+Interessante mostrar que é possível fazer a junção do operador de atribuição com o aritmético, como nos casos abaixo:
 
 <pre>let a = a + 3</pre> é o mesmo que <pre>let a+= 3</pre>, assim como <pre>let a = a - 7</pre> é o mesmo que <pre>let a -= 7</pre>.
 
