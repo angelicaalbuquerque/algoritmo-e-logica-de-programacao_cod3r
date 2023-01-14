@@ -244,7 +244,7 @@ Importante lembrar que nem sempre do lado esquerdo teremos uma variável. Mas 98
 
 Interessante mostrar que é possível fazer a junção do operador de atribuição com o aritmético, como nos casos abaixo:
 
-<code>let a = a + 3</code> é o mesmo que <code>let a+= 3</code>, assim como <code>let a = a - 7</code> é o mesmo que <code>let a -= 7</code>
+<code>let a = a + 3</code> é o mesmo que <code>let a += 3</code> (atribuição aditiva); assim como <code>let a = a - 7</code> é o mesmo que <code>let a -= 7</code> (atribuição subtratitva); assim como <code>let y = y \* 2</code> é o mesmo que <code>let y \*= 2</code> (atribuição multiplicativa) e assim como <code>let y = y / 5</code> é o mesmo que <code>let y /= 5</code> (atribuição divisiva).
 
 ### Tipagem Fraca, Forte, Dinâmica e Estática
 
