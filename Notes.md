@@ -246,8 +246,6 @@ Interessante mostrar que é possível fazer a junção do operador de atribuiç�
 
 <code>let a = a + 3</code> é o mesmo que <code>let a += 3</code> (atribuição aditiva); assim como <code>let a = a - 7</code> é o mesmo que <code>let a -= 7</code> (atribuição subtratitva); assim como <code>let y = y \* 2</code> é o mesmo que <code>let y \*= 2</code> (atribuição multiplicativa) e assim como <code>let y = y / 5</code> é o mesmo que <code>let y /= 5</code> (atribuição divisiva).
 
-#### Lógicos
-
 ### Tipagem Fraca, Forte, Dinâmica e Estática
 
 A tipagem fraca é quando você não precisa especificar o tipo de dado que você está trabalhando. Já a tipagem forte é quando você precisa especificar o tipo de dado que você está trabalhando.
