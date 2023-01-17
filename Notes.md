@@ -260,7 +260,7 @@ Na operação tipo "E" (&&): se A e B forem verdadeiras, a resposta será verdad
 
 Na operação tipo Ou (||): se A ou B forem verdadeiras, a resposta será verdadeira, independente de uma das duas ser falsa. Se as duas forem falsas, a resposta será falsa.
 
-Na operação tipo Ou Exclusivo (!=): se ambos A e B forem verdadeiras ou falsas, a resposta será falsa. Se uma das duas for verdadeira e a outra falsa, a resposta será verdadeira.
+Na operação tipo Ou Exclusivo (!= ou ^): se ambos A e B forem verdadeiras ou falsas, a resposta será falsa. Se uma das duas for verdadeira e a outra falsa, a resposta será verdadeira.
 
 Na operação tipo Not (!): se A for verdadeira, a resposta será falsa. Se A for falsa, a resposta será verdadeira.
 
