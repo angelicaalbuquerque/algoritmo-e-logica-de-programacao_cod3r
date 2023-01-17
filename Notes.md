@@ -246,6 +246,24 @@ Interessante mostrar que é possível fazer a junção do operador de atribuiç�
 
 <code>let a = a + 3</code> é o mesmo que <code>let a += 3</code> (atribuição aditiva); assim como <code>let a = a - 7</code> é o mesmo que <code>let a -= 7</code> (atribuição subtratitva); assim como <code>let y = y \* 2</code> é o mesmo que <code>let y \*= 2</code> (atribuição multiplicativa) e assim como <code>let y = y / 5</code> é o mesmo que <code>let y /= 5</code> (atribuição divisiva).
 
+#### Lógicos
+
+Como um exemplo, eu tenho que tomar uma decisão e essa decisão será composta por duas partes, ou seja, duas perguntas para responder para chegar a uma decisão ou tomar uma resposta. Supondo que essa pergunta A obrigatoriamente seja verdadeira ou falsa, assim como B, a resposta também terá um resultado verdadeiro ou falso.
+
+Exemplo:
+
+```text
+Se eu trabalhar terça E quinta, no sábado eu vou comprar uma TV de 50" e tomar sorvete para comemorar. Se eu trabalhar somente um dos dois dias, eu vou no sábado comprar uma TV de 32" e tomar sorvete. Se eu não trabalhar nenhum dos dois dias, eu não vou comprar TV e nem tomar sorvete, vou ficar em casa.
+```
+
+Na operação tipo "E" (&&): se A e B forem verdadeiras, a resposta será verdadeira. Se uma das duas for falsa, a resposta será falsa.
+
+Na operação tipo Ou (||): se A ou B forem verdadeiras, a resposta será verdadeira, independente de uma das duas ser falsa. Se as duas forem falsas, a resposta será falsa.
+
+Na operação tipo Ou Exclusivo (!=): se ambos A e B forem verdadeiras ou falsas, a resposta será falsa. Se uma das duas for verdadeira e a outra falsa, a resposta será verdadeira.
+
+Na operação tipo Not (!): se A for verdadeira, a resposta será falsa. Se A for falsa, a resposta será verdadeira.
+
 ### Tipagem Fraca, Forte, Dinâmica e Estática
 
 A tipagem fraca é quando você não precisa especificar o tipo de dado que você está trabalhando. Já a tipagem forte é quando você precisa especificar o tipo de dado que você está trabalhando.
