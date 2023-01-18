@@ -264,6 +264,10 @@ Na operação tipo Ou Exclusivo (!= ou ^): se ambos A e B forem verdadeiras ou f
 
 Na operação tipo Not (!): se A for verdadeira, a resposta será falsa. Se A for falsa, a resposta será verdadeira.
 
+#### Ternários
+
+Operador ternário, também conhecido como atribuição condicional, é aquele que possui três operandos. Sua sintaxe é <code>ccondition ? expr1 : expr2</code>, sendo que e condition é true, o operador retornará o valor de expr1; se não, ele retorna o valor de exp2.
+
 ### Tipagem Fraca, Forte, Dinâmica e Estática
 
 A tipagem fraca é quando você não precisa especificar o tipo de dado que você está trabalhando. Já a tipagem forte é quando você precisa especificar o tipo de dado que você está trabalhando.
