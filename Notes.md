@@ -279,3 +279,7 @@ Na tipagem estática, os tipos das variáveis de um programa são explicitamente
 Importante não confundir: tipagem dinâmica NÃO significa tipagem fraca! Ruby possui tipagem dinâmica e forte, enquanto JavaScript possui tipagem dinâmica e fraca (essa última porque não obriga a criação de uma variável com um tipo específico, deixa isso livre).
 
 > 💡 [Confira este artigo sobre tipagem fraca, forte, dinâmica e estática](https://dev.to/joaoava/tipagem-fraca-forte-dinamica-e-estatica-g8k).
+
+## Estruturas de Controle
+
+### Visão geral das Estruturas de Controle
