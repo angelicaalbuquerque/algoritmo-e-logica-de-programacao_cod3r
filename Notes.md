@@ -283,3 +283,17 @@ Importante não confundir: tipagem dinâmica NÃO significa tipagem fraca! Ruby 
 ## Estruturas de Controle
 
 ### Visão geral das Estruturas de Controle
+
+Imagine que temos um algoritmo e esse algoritmo tem uma sequência de 4 passos (normalmente os passos são executados na ordem como eles foram colocados). Vamos supor que, por algum motivo, você quer que o Passo 2 e Passo 3 só sejam executados em uma determinada situação - por exemplo, quando a nota de um aluno for maior ou igual a 7.
+
+Como resolver isso? A resposta é: usando estruturas de controle.
+
+Se a nota do aluno for maior do que 7, eu quero, por exemplo, que ele execute Passo 2 e Passo 3 e que esses passos sejam executados 10 vezes. Ou seja, agora nós temos uma estrutura de repetição que ainda está dentro da ideia de estruturas de controle.
+
+> 💡 Nós usamos as estruturas de controle para controlar o fluxo da nossa aplicação. Assim você começa a ter um controle maior sobre o que será executado em seu código.
+
+Vamos trabalhar com estruturas de controle Condicionais e estruturas de controle de Repetição.
+
+As **condicionais**, basicamente, vão ajudar a definir quando um código precisa ser executado ou não, seja uma sentença ou um bloco de código. Essas condicionais são feitas por _If_, _Else_ e _Switch_.
+
+Já as estruturas de **repetição** (_loop_), que também vão agir em sentença de código ou bloco de código, vão ajudar a definir quantas vezes um código precisa ser executado. As principais estruturas de repetição são _For_, _While_ e _Do While_.
