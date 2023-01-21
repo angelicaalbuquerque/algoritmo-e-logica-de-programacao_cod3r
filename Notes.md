@@ -305,3 +305,19 @@ Já as estruturas de **repetição** (_loop_), que também vão agir em sentenç
 A expressão sempre vai retornar verdadeiro ou falso. Essa estrutura irá selecionar a próxima coisa que vai aparecer no código, logo na sequência de um _if_ podem aparecer: sentença de código; bloco de código ou outra estrutura de controle.
 
 Se o resultado for <code>true</code>, a estrutura que vem logo depois será executada. Se o resultado for <code>false</code>, a estrutura que vem logo depois não será executada.
+
+#### Estrutura If/Else
+
+```js
+if (expressão) {
+  // código
+} else {
+  // código
+}
+```
+
+A estrutura _if_ tem uma expressão que vai gerar um valor verdadeiro ou falso e executar o que estiver na sequência. Se for verdadeiro, ele executa, se não, ele não faz nada e continua o fluxo da aplicação.
+
+Já o _if_ trabalhando com _else_, se a expressão for falsa, ele vai executar outra estrutura de código ou outra estrutura de controle.
+
+Ou seja, você pode executar uma coisa ou outra, dependendo do resultado da expressão.
