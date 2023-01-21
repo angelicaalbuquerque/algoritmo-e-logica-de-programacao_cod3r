@@ -297,3 +297,11 @@ Vamos trabalhar com estruturas de controle Condicionais e estruturas de controle
 As **condicionais**, basicamente, vão ajudar a definir quando um código precisa ser executado ou não, seja uma sentença ou um bloco de código. Essas condicionais são feitas por _If_, _Else_ e _Switch_.
 
 Já as estruturas de **repetição** (_loop_), que também vão agir em sentença de código ou bloco de código, vão ajudar a definir quantas vezes um código precisa ser executado. As principais estruturas de repetição são _For_, _While_ e _Do While_.
+
+#### Estrutura If
+
+<code>if (expressão)</code>
+
+A expressão sempre vai retornar verdadeiro ou falso. Essa estrutura irá selecionar a próxima coisa que vai aparecer no código, logo na sequência de um _if_ podem aparecer: sentença de código; bloco de código ou outra estrutura de controle.
+
+Se o resultado for <code>true</code>, a estrutura que vem logo depois será executada. Se o resultado for <code>false</code>, a estrutura que vem logo depois não será executada.
