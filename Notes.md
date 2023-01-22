@@ -318,6 +318,6 @@ if (expressão) {
 
 A estrutura _if_ tem uma expressão que vai gerar um valor verdadeiro ou falso e executar o que estiver na sequência. Se for verdadeiro, ele executa, se não, ele não faz nada e continua o fluxo da aplicação.
 
-Já o _if_ trabalhando com _else_, se a expressão for falsa, ele vai executar outra estrutura de código ou outra estrutura de controle.
+Já no _if_ trabalhando com _else_, se a expressão for falsa, ele vai executar outra estrutura de código ou outra estrutura de controle.
 
 Ou seja, você pode executar uma coisa ou outra, dependendo do resultado da expressão.
