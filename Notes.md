@@ -298,6 +298,8 @@ As **condicionais**, basicamente, vão ajudar a definir quando um código precis
 
 Já as estruturas de **repetição** (_loop_), que também vão agir em sentença de código ou bloco de código, vão ajudar a definir quantas vezes um código precisa ser executado. As principais estruturas de repetição são _For_, _While_ e _Do While_.
 
+#### Estruturas de controle condicionais:
+
 #### Estrutura If
 
 <code>if (expressão)</code>
@@ -321,3 +323,11 @@ A estrutura _if_ tem uma expressão que vai gerar um valor verdadeiro ou falso e
 Já no _if_ trabalhando com _else_, se a expressão for falsa, ele vai executar outra estrutura de código ou outra estrutura de controle.
 
 Ou seja, você pode executar uma coisa ou outra, dependendo do resultado da expressão.
+
+#### Estruturas de controle de repetição:
+
+Laços de repetição são estruturas de controle que permitem executar um bloco de código várias vezes. Eles são muito úteis quando você precisa executar uma mesma tarefa várias vezes, como, por exemplo, imprimir todos os números de 1 a 10.
+
+Tem momentos que teremos uma quantidade determinada de situação (exemplo: ler 10 páginas de um livro) e em casos que teremos quantidade indeterminada (ler as páginas do livro até às 17h, sem saber quantas páginas consegue ler até esse horário).
+
+No caso quando temos uma quantidade determinada, preferencialmente usa-se o _for_; já no caso para indeterminados, estão mais otimizadas as estruturas _while_ e _do while_.
