@@ -298,7 +298,7 @@ As **condicionais**, basicamente, vão ajudar a definir quando um código precis
 
 Já as estruturas de **repetição** (_loop_), que também vão agir em sentença de código ou bloco de código, vão ajudar a definir quantas vezes um código precisa ser executado. As principais estruturas de repetição são _For_, _While_ e _Do While_.
 
-#### Estruturas de controle condicionais:
+### Estruturas de controle condicionais
 
 #### Estrutura If
 
@@ -324,10 +324,67 @@ Já no _if_ trabalhando com _else_, se a expressão for falsa, ele vai executar 
 
 Ou seja, você pode executar uma coisa ou outra, dependendo do resultado da expressão.
 
-#### Estruturas de controle de repetição:
+### Estruturas de controle de repetição
 
 Laços de repetição são estruturas de controle que permitem executar um bloco de código várias vezes. Eles são muito úteis quando você precisa executar uma mesma tarefa várias vezes, como, por exemplo, imprimir todos os números de 1 a 10.
 
 Tem momentos que teremos uma quantidade determinada de situação (exemplo: ler 10 páginas de um livro) e em casos que teremos quantidade indeterminada (ler as páginas do livro até às 17h, sem saber quantas páginas consegue ler até esse horário).
 
-No caso quando temos uma quantidade determinada, preferencialmente usa-se o _for_; já no caso para indeterminados, estão mais otimizadas as estruturas _while_ e _do while_.
+> 💡 No caso quando temos uma quantidade determinada, preferencialmente usa-se o _for_; já no caso para indeterminados, estão mais otimizadas as estruturas _while_ e _do while_.
+
+#### While
+
+```js
+while (expressão) {
+  // código
+}
+```
+
+Enquanto a expressão for verdadeira, o código será executado. Quando a expressão for falsa, o código não será executado e o fluxo da aplicação continua. No exemplo abaixo, teríamos um loop infinito:
+
+```js
+while (true) {
+  console.log("Laço infinito");
+}
+
+console.log("Fim");
+```
+
+A diferença do _if_ para o _while_ é que o _if_ é executado uma única vez, enquanto o _while_ é executado várias vezes enquanto a expressão for verdadeira.
+
+Exemplo de contagem com While:
+
+```js
+let controle = 1;
+
+console.log("contando de 1 até 10:");
+
+while (controle <= 10) {
+  console.log(controle);
+  controle++;
+}
+
+console.log("~ fim ~");
+```
+
+#### For
+
+```js
+for (inicialização; condição; incremento) {
+  // código
+}
+```
+
+A primeira parte é a declaração da variável, a segunda a expressão e a terceira o incremento ou a modificação da variável conforme quiser. O _for_ é uma estrutura de repetição que tem uma quantidade determinada de vezes que ele vai ser executado.
+
+Exemplo de contagem com For:
+
+```js
+console.log("contando de 1 até 10:");
+
+for (let controle = 1; controle <= 10; controle++) {
+  console.log(controle);
+}
+
+console.log("~ fim ~");
+```
