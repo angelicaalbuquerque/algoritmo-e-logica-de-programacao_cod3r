@@ -388,3 +388,22 @@ for (let controle = 1; controle <= 10; controle++) {
 
 console.log("~ fim ~");
 ```
+
+#### Switch
+
+```js
+switch (expressão) {
+  case valor1:
+    // código
+    break;
+  case valor2:
+    // código
+    break;
+  default:
+  // código
+}
+```
+
+Estrutura de controle voltada para quando se tem múltiplas seleções, sendo que a expressão não é um verdadeiro ou falso, diferentemente do _if_ e _while_, mas sim um valor que pode ser comparado com os valores dos _case_.
+
+O _break_ do switch é para parar a execução do código; caso não tenha o _break_, ele vai executar todos os _case_ abaixo do que foi selecionado.
