@@ -407,3 +407,5 @@ switch (expressão) {
 Estrutura de controle voltada para quando se tem múltiplas seleções, sendo que a expressão não é um verdadeiro ou falso, diferentemente do _if_ e _while_, mas sim um valor que pode ser comparado com os valores dos _case_.
 
 O _break_ do switch é para parar a execução do código; caso não tenha o _break_, ele vai executar todos os _case_ abaixo do que foi selecionado.
+
+o _continue_ é para pular a execução do código e ir para a próxima iteração.
