@@ -409,3 +409,86 @@ Estrutura de controle voltada para quando se tem múltiplas seleções, sendo qu
 O _break_ do switch é para parar a execução do código; caso não tenha o _break_, ele vai executar todos os _case_ abaixo do que foi selecionado.
 
 o _continue_ é para pular a execução do código e ir para a próxima iteração.
+
+## Funções
+
+Função é um bloco de código que tem nome e, uma vez que ele tenha um nome, você pode reutilizá-lo quantas vezes quiser.
+
+> 💡 Sempre associe função com ação. Uma função é uma ação que você pode executar quantas vezes quiser.
+
+### Função vs Algoritmo
+
+Em um algoritmo, nós temos as estruturas de controle e podemos escolher um determinado conjunto de passos e se uma determinada expressão pode acontecer ou não. No caso clássico exemplo da receita de bolo, se você quiser calda de chocolate, você pode seguir para esse passo ou não.
+
+Assim como a receita, na maioria das vezes um algoritmo precisa de "ingredientes" de entrada pra que seja possível executar o paso a passo em cima desses "ingredientes". Essas entradas vão representar os dados.
+
+> 💡 Entretanto, existem algoritmos também que não precisam de nenhum dado de entrada e que também não vão gerar nenhuma saída.
+
+No algoritmo temos uma sequência de passos, que são agrupadas em uma sentença de códigos (executada a partir de um passo) e essas sentenças são agrupadas em blocos de código (executado a partir de um conjunto de passos).
+
+Uma função é um bloco de código que, a partir de agora, passa a ter um nome, e pode ser utilizada quantas vezes for necessário dentro da implementação.
+
+É possível ter funções que:
+
+- Recebem dados e geram saídas;
+- Recebem dados e não retornam nada;
+- Não recebem dados e retornam algo;
+- Não recebem dados e não retornam nada.
+
+### Anatomia da Função
+
+```js
+function nomeDaFunção() {
+  // sentença de código
+}
+```
+
+Para definirmos uma função, usamos a palavra reservada _function_ e o nome da função. Dentro dos parênteses, que são obrigatórios, podemos passar parâmetros, que são valores que a função vai receber para executar a tarefa. O bloco de código, que vai ser executado quando a função for chamada, fica entre chaves.
+
+### Entendendo Undefined, NaN e Null
+
+```js
+let a;
+
+console.log(a);
+```
+
+No código acima, como eu não defini um valor para a variável a o resultado será _undefined_. O _undefined_ é um valor que significa que a variável não tem valor definido, que não foi inicializado.
+
+No caso abaixo, o resultado será _NaN_ (Not a Number), pois o JavaScript não consegue fazer a operação de soma com um valor _undefined_.
+
+```js
+let b;
+let c = 7;
+
+console.log(b + c);
+```
+
+Quando você quer inicializar um valor de uma variável de uma forma explícita, mas sem querer dar nenhum valor pra ele, você pode utilizar o vazio, que é o _null_.
+
+```js
+let d = null;
+console.log(d);
+```
+
+Então, o null é utilizado quando você quer ter um valor vazio, mas você quer dizer que aquele valor foi realmente inicializado.
+
+Agora, caso eu queira somar o valor de _d_ com _c_, o JS vai considerar o nulo como 0 e o resultado será 7.
+
+### Função e Undefined
+
+Quando você não define nada, o que uma função retorna? Uma função retornará _undefined_.
+
+```js
+function semRetorno() {
+  console.log("Função foi chamada");
+}
+let exibirFuncaoSemRetorno = semRetorno();
+console.log(exibirFuncaoSemRetorno);
+```
+
+JavaScript uma linguagem muito flexível e diferente de outras linguagens que tem uma forma mais, digamos, restrita de fazer as coisas. Algumas linguagens quando você diz que não vai retornar nada, você não pode chamar uma função que não retorna nada e tentar atribuir alguma coisa porque se a função não vai retornar nada, não faz sentido você fazer esse tipo de código; só que JavaScript permite isso, retornando _undefined_.
+
+Sendo assim:
+
+> 💡 Mesmo quando você tem uma função que não retorna nada, você ainda pode chamar o código como se ela retornasse alguma coisa e se ela, de fato, não retornar a nada, o valor retornado será _undefined_, que é exatamente a mesma coisa quando você define uma variável e você não inicializa essa variável.
