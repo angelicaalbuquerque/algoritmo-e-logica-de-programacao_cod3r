@@ -252,9 +252,7 @@ Como um exemplo, eu tenho que tomar uma decisão e essa decisão será composta 
 
 Exemplo:
 
-```text
-Se eu trabalhar terça E quinta, no sábado eu vou comprar uma TV de 50" e tomar sorvete para comemorar. Se eu trabalhar somente um dos dois dias, eu vou no sábado comprar uma TV de 32" e tomar sorvete. Se eu não trabalhar nenhum dos dois dias, eu não vou comprar TV e nem tomar sorvete, vou ficar em casa.
-```
+> Se eu trabalhar terça E quinta, no sábado eu vou comprar uma TV de 50" e tomar sorvete para comemorar. Se eu trabalhar somente um dos dois dias, eu vou no sábado comprar uma TV de 32" e tomar sorvete. Se eu não trabalhar nenhum dos dois dias, eu não vou comprar TV e nem tomar sorvete, vou ficar em casa.
 
 Na operação tipo "E" (&&): se A e B forem verdadeiras, a resposta será verdadeira. Se uma das duas for falsa, a resposta será falsa.
 
