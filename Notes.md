@@ -490,3 +490,57 @@ JavaScript uma linguagem muito flexível e diferente de outras linguagens que te
 Sendo assim:
 
 > 💡 Mesmo quando você tem uma função que não retorna nada, você ainda pode chamar o código como se ela retornasse alguma coisa e se ela, de fato, não retornar a nada, o valor retornado será _undefined_, que é exatamente a mesma coisa quando você define uma variável e você não inicializa essa variável.
+
+### Função com Retorno
+
+Para retornar o valor de uma função, usamos a palavra reservada _return_.
+
+```js
+function sempreRetornaMil() {
+  return 1000;
+}
+let valor = sempreRetornaMil();
+console.log(valor);
+```
+
+No momento que o código encontra a palavra _return_, ele automaticamente sai do método e não executa nada que vem depois. Por exemplo, se depois do _return_ eu tiver um _console.log_, ele não vai ser executado.
+
+### Variações de Funções
+
+**#1: função COM parâmetro e COM retorno**
+
+```js
+function somar(a, b) {
+  return a + b;
+}
+console.log(somar(30, 52));
+```
+
+**#2: função COM parâmetro e SEM retorno**
+
+```js
+function exibirMultiplicacao(c, d) {
+  console.log(c * d);
+}
+
+exibirMultiplicacao(10, 21);
+```
+
+**#3: função SEM parâmetro e COM retorno**
+
+```js
+function retornarDataAtual() {
+  return new Date();
+}
+console.log(retornarDataAtual());
+```
+
+**#4: função SEM parâmetro e SEM retorno**
+
+```js
+function exibirHoraAtual() {
+  console.log(new Date().getHours());
+}
+
+exibirHoraAtual();
+```
