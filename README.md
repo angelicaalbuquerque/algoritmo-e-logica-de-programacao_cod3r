@@ -3,7 +3,6 @@
 </h2>
 
 <p align="center">
-<!-- <img alt="badge html" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/f96545c39b9ff34534ee166d78e4bcef00de3928/badges/html.svg"> -->
 <img alt="badge javascript" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/d369e43d97e48a84cda8328adbd77b1ba280ebbf/badges/javascript.svg">
 <img alt="badge vscode" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/f96545c39b9ff34534ee166d78e4bcef00de3928/badges/visual-studio-code.svg">
 <img alt="badge prettier" src="https://raw.githubusercontent.com/angelicaalbuquerque/badges-and-icons/f96545c39b9ff34534ee166d78e4bcef00de3928/badges/prettier-2.svg">
@@ -19,9 +18,6 @@
 
 <p align="center">
   <a href="#-Sobre">Sobre</a>&nbsp;&nbsp;|&nbsp;
-  <a>
-    <a href="#-Acessar-os-projetos">Acessar os projetos</a>&nbsp;&nbsp;|&nbsp;
-  <a>
   <a href="#-Entre-em-contato">Contato</a>
 </p>
 
@@ -45,10 +41,6 @@ Alguns dos assuntos abordados neste curso:
 - Objetos.
 
 </p>
-
-## 💻 Acessar os projetos
-
-_Os estudos serão compartilhados em breve._
 
 ## 📬 Entre em contato!
 
