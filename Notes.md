@@ -544,3 +544,68 @@ function exibirHoraAtual() {
 
 exibirHoraAtual();
 ```
+
+### Armazenar função em variável
+
+Para isso, teremos uma função anônima, que é uma função sem nome.
+
+```js
+let exibirSaudacao = function () {
+  console.log("Olá, bom dia!");
+};
+```
+
+Também é possível armazenar uma função em uma variável e depois chamar essa função através da variável.
+
+### Função como parâmetro
+
+A partir do momento que a gente tem o conceito de que pode armazenar uma função dentro de uma constante ou de uma variável, podemos evoluir essa ideia e passar essa função como parâmetro para a outra função.
+
+Para passar uma função como parâmetro para executar, basta passar o nome da função sem os parênteses.
+
+```js
+function executar(funcao) {
+  if (typeof funcao === "function") {
+    console.log(funcao());
+  }
+}
+
+function bomDia() {
+  return "Bom dia!";
+}
+
+executar(bomDia);
+```
+
+#### Parâmetros de uma função
+
+No caso abaixo, no momento que eu não passo o 4º parâmetro, ele vai gerar um _NaN_ porque no momento que eu não passo um parâmetro obrigatório o JS vai assumir que esse parâmetro vai ser _undefined_.
+
+```js
+function somar(a, b, c, d) {
+  return a + b + c + d;
+}
+
+console.log(somar(1, 2, 3, 4));
+console.log(somar(1, 2, 3));
+```
+
+E como ter um valor diferente de _undefined_ para um parâmetro obrigatório? Basta passar um valor padrão para esse parâmetro.
+
+```js
+function somar(a = 0, b = 0, c = 0, d = 0) {
+  return a + b + c + d;
+}
+
+console.log(somar(1, 2, 3, 4));
+console.log(somar(1, 2, 3));
+console.log(somar(1, 2));
+console.log(somar(1));
+console.log(somar());
+```
+
+E se forem passado mais valores, o JS vai ignorá-los e considerar apenas os 4.
+
+```js
+
+```
