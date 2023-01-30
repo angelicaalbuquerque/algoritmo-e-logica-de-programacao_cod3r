@@ -10,7 +10,7 @@ function entregarMenorNota(n1, n2) {
 
 console.log(entregarMenorNota(nota1, entregarMenorNota(nota2, nota3)));
 
-function calcularMedia(n1, n2, n3) {
+function calcularMediaDasDuasMaioresNotas(n1, n2, n3) {
   const menorNota = entregarMenorNota(n1, entregarMenorNota(n2, n3));
 
   if (menorNota === n1) {
@@ -22,18 +22,21 @@ function calcularMedia(n1, n2, n3) {
   }
 }
 
-console.log(calcularMedia(nota1, nota2, nota3));
+console.log(calcularMediaDasDuasMaioresNotas(nota1, nota2, nota3));
 
-function entregarMediaParaStatus(calcularMedia) {
-  if (calcularMedia >= 7) {
+function entregarMediaParaStatus(calcularMediaDasDuasMaioresNotas) {
+  if (calcularMediaDasDuasMaioresNotas >= 7) {
     return "Aprovado";
-  } else if (calcularMedia >= 4 && calcularMedia < 7) {
+  } else if (
+    calcularMediaDasDuasMaioresNotas >= 4 &&
+    calcularMediaDasDuasMaioresNotas < 7
+  ) {
     return "Recuperação";
   } else {
     return "Reprovado";
   }
 }
 
-const mediaFinal = calcularMedia(nota1, nota2, nota3);
+const mediaFinal = calcularMediaDasDuasMaioresNotas(nota1, nota2, nota3);
 const statusFinal = entregarMediaParaStatus(mediaFinal);
 console.log(`O resultado final do aluno é: ${statusFinal} `);
