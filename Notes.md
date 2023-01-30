@@ -606,6 +606,38 @@ console.log(somar());
 
 E se forem passado mais valores, o JS vai ignorá-los e considerar apenas os 4.
 
-```js
+### Retornar uma função
 
+No JavaScript é possível retornar uma função dentro de outra.
+
+```js
+function retornar() {
+  function bomDia() {
+    return "Bom dia!";
+  }
+
+  return bomDia;
+}
+
+console.log(retornar()); //[Function: bomDia]
+console.log(retornar()()); // "Bom dia!"
+```
+
+#### Curring
+
+> 💡 Currying é o processo de transformar uma função que espera vários argumentos em uma função que espera um único argumento e retorna outra função curried.
+
+```js
+console.log(somar1(5, 4));
+
+function somar2(a) {
+  return function (b) {
+    return a + b;
+  };
+}
+
+console.log(somar2(5)(4));
+
+const somarMais10 = somar2(10);
+console.log(somarMais10(5));
 ```
