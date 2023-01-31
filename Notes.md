@@ -641,3 +641,120 @@ console.log(somar2(5)(4));
 const somarMais10 = somar2(10);
 console.log(somarMais10(5));
 ```
+
+### Qual a diferença entre método e função?
+
+> 💡 Método é uma função que está dentro de um objeto. Um objeto é uma coleção de propriedades.
+
+Em uma analogia com as pastas do computador, assim como dentro da pasta conseguimos armazenar coisas, no objeto conseguimos armazenar coisas. Que coisas são essas? Podem ser funções e atributos (dados).
+
+## Arrays
+
+É uma estrutura de dados que vai ajudar a armazenar várias informações a partir de uma variável. Por exemplo, armazenar diversas notas de alunos.
+
+Em JS, Array é uma estrutura dinâmica, que cresce e diminui de tamanho acordo com a necessidade, em contrapartida da estrutura do Java, que é estática (se você cria um array com 10 posições, ele vai ter sempre 10 posições). No Java, o que é próximo do Array em JS é a estrutura de dados _List_.
+
+O array é uma estrutura indexada, ou seja, cada elemento do array é identificado por um índice. Então, a partir de uma única variável eu consigo acessar valores diferentes.
+
+```js
+const notas = [7.8, 6.7, 10, 9.5, 7.8, 5.8];
+console.log(notas[0], notas[3]); //7.8 e 9.5
+```
+
+Suponhamos que dentro do array de Notas eu tenha 10 notas, eu consigo acessar cada uma dessas notas através de um índice, sempre partindo do 0 e o último elemento do array o tamanho do array menos 1.
+
+#### Possibilidades com array
+
+Em JS, podemos adicionar novos elementos em um array, podemos remover elementos de um array, podemos alterar elementos de um array, podemos criar um array vazio e depois adicionar elementos nele, podemos criar um array com elementos e depois adicionar mais elementos nele.
+
+```js
+const nomes = []; //declaração array vazio
+console.log(nomes); //[]
+
+nomes[0] = "Leonardo";
+nomes[1] = "Antony";
+nomes[2] = "Adaíla";
+nomes[3] = "Raphael";
+nomes[4] = "Milene";
+nomes[10] = "Paulo";
+
+console.log(nomes); // [ 'Leonardo', 'Antony', 'Adaíla', 'Raphael', 'Milene', <5 empty items>, 'Paulo' ]
+```
+
+Apesar de termos declarado uma constante de notas, seus valores internos podem ser modificados, o que não pode ser modificado é a referência da constante, o valor de notas (por exemplo, alterar para _notas = "teste"_).
+
+```js
+notas[4] = 8.7;
+console.log(notas); //[ 7.8, 6.7, 10, 9.5, 8.7, 5.8 ]
+```
+
+### Array é um objeto
+
+O fato de o array ser um objeto, faz com que ele tenha algumas características interessantes de um objeto.
+
+Da mesma forma que _console_ é um objeto e _log_ é uma função, eu consigo acessar funções que estão dentro do console e, sendo assim, eu também vou conseguir acessar funções que existem dentro do objeto que é o array.
+
+Um exemplo é que é possível acessar a função _push_, que está dentro do array e serve para adicionar um novo elemento no array.
+
+```js
+const numeros = [1, 2, 3];
+
+console.log(typeof numeros); //object
+numeros.push(4);
+numeros.push(5);
+numeros.push(10.98);
+console.log(numeros); //[ 1, 2, 3, 4, 5, 10.98 ]
+console.log(numeros.length); //6
+```
+
+### Percorrendo um array
+
+Para percorrer para, por exemplo, calcular a média de todos os alunos de uma turma, vamos precisar utilizar as estruturas de controle. A mais utilizada é a estrutura de repetição _for_.
+
+Nós já vimos que um array é indexado a partir do 0, sendo assim, o último elemento do array é o tamanho do array menos 1.
+
+```js
+const numeros = [1, 2, 3, 4, 5, 6, 11];
+
+for (let i = 0; i < numeros.length; i++) {
+  console.log(numeros[i]);
+}
+```
+
+Forma mais simples:
+
+```js
+const notas = [7, 8, 3, 5, 10, 9, 8, 8];
+
+for (let nota of notas) {
+  console.log(nota); //7 8 3 5 10 9 8 8
+}
+```
+
+Percorrendo os índices:
+
+```js
+let indices = "";
+
+for (let indice in notas) {
+  indices += indice + " ";
+}
+
+console.log(indices); //0 1 2 3 4 5 6 7
+```
+
+> 💡 Para acessar os valores utilizamos "of", para acessar os índices utilizamos "in".
+
+A versão mais simples ainda do laço _for_ é utilizando o _forEach_, que é uma função que está dentro do array. O _forEach_ recebe uma função como parâmetro e essa função recebe como parâmetro cada elemento do array.
+
+### Métodos do Array
+
+São funções que estão dentro do objeto Array. São funções que podem ser utilizadas para manipular arrays.
+
+Alguns exemplos:
+
+- push - adiciona um elemento no final do array
+- concat - concatena arrays e gera um novo array
+- join - junta todos os elementos de um array em uma string
+- includes - diz se um determinado elemento pertence ou não a um determinado array
+- indexOf - retorna o índice de um determinado elemento
