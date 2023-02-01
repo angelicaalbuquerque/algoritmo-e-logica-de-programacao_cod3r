@@ -18,6 +18,7 @@
 
 <p align="center">
   <a href="#-Sobre">Sobre</a>&nbsp;&nbsp;|&nbsp;
+  <a href="#-Notas-de-aula">Notas de aula</a>&nbsp;&nbsp;|&nbsp;
   <a href="#-Entre-em-contato">Contato</a>
 </p>
 
@@ -41,6 +42,10 @@ Alguns dos assuntos abordados neste curso:
 - Objetos.
 
 </p>
+
+## 📝 Notas de aula
+
+As anotações das aulas estão disponíveis <a href="https://github.com/angelicaalbuquerque/algoritmo-e-logica-de-programacao_cod3r/blob/main/Notes.md" target="_blank">aqui</a>.
 
 ## 📬 Entre em contato!
 
