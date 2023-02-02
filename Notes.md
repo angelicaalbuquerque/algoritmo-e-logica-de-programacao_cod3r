@@ -753,8 +753,39 @@ São funções que estão dentro do objeto Array. São funções que podem ser u
 
 Alguns exemplos:
 
-- push - adiciona um elemento no final do array
-- concat - concatena arrays e gera um novo array
-- join - junta todos os elementos de um array em uma string
-- includes - diz se um determinado elemento pertence ou não a um determinado array
-- indexOf - retorna o índice de um determinado elemento
+- push - Adiciona um elemento no final do array
+- concat - Concatena arrays e gera um novo array
+- join - Junta todos os elementos de um array em uma string
+- includes - Diz se um determinado elemento pertence ou não a um determinado array
+- indexOf - Retorna o índice de um determinado elemento
+- splice - Remove elementos dentro de um array
+- pop - Remove o último elemento do array e retorna esse último elemento
+- forEach - Percorre todos os elementos de um array
+
+> ⚠ Importante sempre se perguntar se o método que você está utilizando modifica o array original ou se ele gera um novo array.
+
+### ForEach
+
+O forEach recebe uma função como parâmetro e essa função recebe como parâmetro cada elemento do array.
+
+Pode ser usado de duas formas:
+
+1: criando uma função para chamar dentro do forEach
+
+```js
+function praCadaElemento(elemento, indice, arrayCompleto) {
+  console.log(elemento, indice, arrayCompleto);
+}
+
+numeros.forEach(praCadaElemento);
+```
+
+2: passando função anônima diretamente como parâmetro
+
+```js
+numeros.forEach(function (el, _, a) {
+  console.log("forEach", el, a);
+});
+```
+
+> ⚠ Importante saber: a ordem dos elementos é respeitada, ou seja, sempre vou seguir _elemento_, _indice_ e _array_ na passagem de parâmetro. Não consigo, por exemplo, passar um elemento e passar direto um array porque o segundo _elemento_ é sempre um _índice_. O que posso fazer é, caso queira ignorar o índice, por exemplo, passar o sinal de _underline_.
