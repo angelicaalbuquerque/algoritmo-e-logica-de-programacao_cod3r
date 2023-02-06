@@ -789,3 +789,30 @@ numeros.forEach(function (el, _, a) {
 ```
 
 > ⚠ Importante saber: a ordem dos elementos é respeitada, ou seja, sempre vou seguir _elemento_, _indice_ e _array_ na passagem de parâmetro. Não consigo, por exemplo, passar um elemento e passar direto um array porque o segundo _elemento_ é sempre um _índice_. O que posso fazer é, caso queira ignorar o índice, por exemplo, passar o sinal de _underline_.
+
+## Objetos
+
+Vamos trabalhar o conceito de objeto fazendo um paralelo com o conceito de array, pois o conceito de objetos é muito importante principalmente para linguagens que utilizam o paradigma de orientação a objetos.
+
+Nós estávamos utilizando o paradigma de programação procedural — um paradigma de programação que se baseia em procedimentos, que são executados numa sequência — e também vimos o paradigma de programação funcional — o problema é dividido em blocos e, para sua resolução, são implementadas funções que definem variáveis em seu escopo e retornam algum resultado.
+
+> 💡 Ler mais sobre os tipos de paradigmas de programação [aqui](https://blog.betrybe.com/tecnologia/paradigmas-de-programacao/).
+
+Para entender o conceito de objeto, vamos relembrar o array. O array é uma estrutura que armazena dados de forma sequencial e é organizado a partir de índices, sendo representado a partir de um par de colchetes []. Temos, então, uma estrutura que a partir do índice conseguimos acessar um valor.
+
+Fazendo um paralelo com array, em JS, um objeto é representado a partir de um par de chaves {}. Em vez de termos uma estrutura indexada de índice/valor, um objeto é organizado a partir de determinada chave, que é um valor textual. Dentro do objeto, essa chave precisa ser única, ou seja, não pode ter duas chaves com o mesmo nome.
+
+### Definindo um objeto
+
+Você tem o atributo e o valor. O atributo/identificador é o nome da chave e o valor é o valor da chave.
+
+```js
+const pessoa = {
+  nome: "João",
+  idade: 20,
+  altura: 1.8,
+  peso: 80,
+};
+```
+
+Da mesma forma que um array pode armazenar múltiplas informações na única estrutura, o objeto também é capaz de armazenar múltiplas informações dentro de uma única estrutura.
