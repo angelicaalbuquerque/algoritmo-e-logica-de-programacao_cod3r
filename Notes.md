@@ -816,3 +816,29 @@ const pessoa = {
 ```
 
 Da mesma forma que um array pode armazenar múltiplas informações na única estrutura, o objeto também é capaz de armazenar múltiplas informações dentro de uma única estrutura.
+
+Além de atributos, podemos criar função dentro de um objeto. Essa função é chamada de método.
+
+> 💡 Os atributos representam as características do objeto e os métodos representam os comportamentos, as ações do objeto. Um objeto, então, é composto por atributos e comportamentos/métodos, conjunto que pode ser chamado de membros.
+
+Um carro, por exemplo, tem atributos como cor, marca, modelo, ano, etc. E tem métodos como ligar, desligar, acelerar, frear, etc.
+
+Assim como em português temos pronomes para nos referenciar a nós mesmos ou nossos próprios atributos (exemplo: "meu nome é Angélica e meu CPF é 12345"), em JS temos a palavra-chave _this_ para referenciar o próprio objeto -- quando você quer referenciar um atributo ou método que pertence ao objeto e você está dentro do objeto você usa essa palavra-chave.
+
+> 💡 A palavra-chave _this_, usada dentro da linguagem JavaScript e também em outras linguagens, é a que faz com que você consiga, a partir do objeto, referenciar a si mesmo. Ou seja, quando o próprio objeto quer acessar os seus próprios atributos, ele vai usar _this_ exatamente para acessar isso. _Algumas linguagens utilizam a palavra \_self_ para fazer essa referência.
+
+E fora do objeto, utilizamos _this_? Não, utiliza-se o nome da variável que está armazenando o objeto.
+
+```js
+const produto = {
+  nome: "Xiaomi Note 9S",
+  preco: 2500,
+  desconto: 0.15,
+  precoComDesconto: function () {
+    return this.preco * (1 - this.desconto);
+  },
+};
+
+console.log(produto.nome);
+console.log(produto.precoComDesconto());
+```
