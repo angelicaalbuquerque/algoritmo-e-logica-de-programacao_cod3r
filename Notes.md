@@ -856,3 +856,23 @@ const data = {
 
 data.dia = 27;
 ```
+
+Para adicionar um valor dinamicamente a um objeto, fazemos da seguinte forma:
+
+```js
+const usuario = {
+  email: "aluno@cod3r.com.br",
+};
+
+console.log(usuario.email);
+console.log(usuario.nome); //undefined porque não foi criado
+
+usuario.nome = "Aluno";
+
+console.log(usuario.nome); //agora passa a exibir o nome do aluno
+console.log(usuario); //o atributo nome foi adicionado
+```
+
+```
+
+```
