@@ -842,3 +842,17 @@ const produto = {
 console.log(produto.nome);
 console.log(produto.precoComDesconto());
 ```
+
+### Alterando o valor de um objeto
+
+No exemplo abaixo, não podemos alterar o valor da variável da constante _data_, mas podemos alterar um atributo interno de um objeto da seguinte forma:
+
+```js
+const data = {
+  dia: 1,
+  mes: 10,
+  ano: 2021,
+};
+
+data.dia = 27;
+```
