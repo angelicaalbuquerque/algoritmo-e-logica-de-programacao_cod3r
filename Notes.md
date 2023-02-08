@@ -873,6 +873,30 @@ console.log(usuario.nome); //agora passa a exibir o nome do aluno
 console.log(usuario); //o atributo nome foi adicionado
 ```
 
+### Função construtora
+
+Quando você cria uma função e você usa a chamda dda função juntamente com a palavra _new_, você passa a ter uma função construtora, que será responsável por construir um objeto e cada vez que ela for chamada vai ser criado um novo objeto.
+
+Uma função construtora representa uma classe em outras linguagens, em JS também tem classes, mas é mais natural utilizar função como sendo construtora e a partir dela criar objetos. Normalmente, quando criamos uma função construtora, a primeira letra dessa função é maiúscula.
+
+```js
+function Data(dia = 1, mes = 1, ano = 2023) {
+  this.dia = dia; //criando um atributo dia dentro do objeto
+  this.mes = mes;
+  this.ano = ano;
+
+  this.exibir = function () {
+    return `${this.dia}/${this.mes}.${this.ano}`;
+  };
+}
 ```
 
-```
+> 💡 Eu vou sempre utilizar essa função associada com _new_ para que eu possa criar objetos a partir dela.
+
+### Função Construtora x Classe x Objeto
+
+Imagine que temos uma massa de salgados e eu quero extrair formatos redondos e triangulares. Para que eu extraia esses formatos, eu preciso de um molde. A função construtora (ou a classe) são esses moldes.
+
+Uma função construtora vai definir quais são os atributos, quais são os nomes dos atributos, qual é a quantidade e quais são as informações relacionadas aos atributos, quais são os métodos ou comportamentos que um objeto terá quando, a partir de uma função construtora ou classe, for usada a palavra _new_.
+
+Quando você usa a palavra _new_ você pega, basicamente, um molde para criar os objetos, que terão as mesmas quantidades de atributos e métodos que você especificou na função construtora ou classe.
